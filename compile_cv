@@ -1,0 +1,3 @@
+#!/bin/sh
+
+xelatex bielejec_CV_eng.tex

@@ -1,0 +1,438 @@
+\documentclass[a4paper, oneside, final]{scrartcl}
+
+% === PACKAGES
+\usepackage{soul}
+\usepackage{scrpage2}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{ltablex}
+\usepackage{colortbl}
+\usepackage{fontspec}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+% === USER SPECIFIC LATEX COMMANDS
+\newenvironment{lyxlist}[1]
+{\begin{list}{}
+{\settowidth{\labelwidth}{#1}
+ \setlength{\leftmargin}{\labelwidth}
+ \addtolength{\leftmargin}{\labelsep}
+ \renewcommand{\makelabel}[1]{##1\hfil}}}
+{\end{list}}
+
+\newcommand{\noun}[1]{\textsc{#1}}
+
+\newcommand{\gray}{\rowcolor[gray]{.90}}
+
+% === PDF SETUP
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Filip Bielejec - Curriculum Vitae}, pdfauthor={Filip Bielejec}]
+%% {hyperref}
+%% \hypersetup{linkcolor=black, citecolor=blue, filecolor=black, urlcolor=black}
+
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+\urlstyle{rm}
+
+% === DOCUMENT LAYOUT
+\geometry{a4paper, textwidth=19cm, textheight=22cm, marginparsep=16cm, marginparwidth=1cm, headheight=4cm}
+\setlength\parindent{0cm}
+\frenchspacing
+
+% === FONT SETTINGS
+% \defaultfontfeatures{Mapping=tex-text}
+%~ \setmainfont {Sans Serif}
+%~ \setsansfont {Serif}
+
+\chead{\textit{Filip Bielejec - Curriculum Vitae}}
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+
+\pagestyle{scrheadings}
+
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape}
+
+% === FOOTER DEFINITION
+\cofoot{
+   %~ \addfontfeature{LetterSpace=20.0}\scshape\fontsize{9}{10}
+   \footnotesize{
+    \so{
+        Route des Songenaz 9 · 744-00 Chamonix · France
+}\\
+        {\Large\Letter} fbielejec@gmail.com \ {\Large\Telefon} +32 487 443 064}%
+}%
+
+\begin{document}
+
+%% \section{About Me}
+
+%% I have been passionately building and writing computer programs for more than 10 years, in a wide range of areas and applications, from scientific software, visualization tools, mobile and distributed blockchain applications to systems for healthcare service providers.
+
+%% I have worked on software written in R, Java, C/C++, JavaScript, Clojure and ClojureScript.
+%% I have been very fortunate to have often worked with projects released to the public domain, therefore I could contribute to many Open Source projects and libraries, such as \href{https://github.com/district0x/memefactory}{memefactory}, \href{https://github.com/fbielejec/cljs-firebase-client}{cljs-firebase-client}, \href{https://github.com/fbielejec/lein-solc}{lein-solc}, and \href{https://github.com/fbielejec}{many more}.
+%% %% \href{https://github.com/fbielejec/spread-server}{Spread}, \href{https://github.com/beagle-dev/beagle-lib}{Beagle}, \href{https://github.com/beast-dev/beast-mcmc}{Beast},
+
+%% For the past 4 years I have been trying to do all the work I can in the functional programming paradigm, whenever it fits. % but I have a lot of OO experience as well.
+%% I used to write a lot of R scripts, mainly for data-cleaning, analysis and vizializations, I especially enjoyed ggplot2 and went as far as writing desktop widgets in R by utilizing GTK bindings to R.
+%% You can see some of that code \href{https://github.com/fbielejec/PlotMapsWidget}{here}, although at this time I can take no responsibility for whether it still works.
+
+%% I maintain a blog dedicated mostly to Clojure / FP / DevOps: \url{https://www.blog.nodrama.io/} and I help to co-organize a \href{https://www.meetup.com/Leuven-Functional-Programming-Meetup/}{Functional Programming Meetup}.
+
+%% I have a strong experience in devops, cloud networking, automation, monitoring, designing and deploying pipelines, mainly using AWS, Docker, Serverless, CircleCI and Travis.
+%% I have worked on systems utilizing messaging, REST, EQL/GraphQL or even SOAP for communication.
+
+%% %% I have always been driven by curiosity and although I have never worked professionally in Rust I have picked up an interest in it.
+%% %% I'm especially interested in how it could be used for GPGPU programming, as well as it's use for low-level microcontrollers and embedded software.
+%% %% Lately I started experimenting with the use of Rust with OpenCV: \url{https://github.com/fbielejec/eye-tracker} as a hobby-project.
+
+%% I would love the opportunity to combine my past experience in data analysis and vizualization with my curiosity for functional programming and Clojure, hence this application.
+
+%% work with Rust in larger systems (hence this application).
+
+\begin{center}
+\section{Education}
+%% \vspace{-8pt}
+
+\begin{lyxlist}{00.00.0000}
+\item [{\noun{\scriptsize 2011 - 2015}}] \noun{KU Leuven,
+Rega Institute For Medical Research, Evolutionary and Computational Virology }\\
+\emph{Doctoral Training in Bioinformatics}
+\item [{\noun{\scriptsize 2009-2010}}] \noun{Ghent University, Faculty
+of Sciences, Department of Applied Mathematics and Computer Science}\\
+\emph{Master of Statistical Data Analysis Programme}
+\item [{\noun{\scriptsize 2005-2010}}] \noun{Technical University of \L{}ód\'{z},
+Department of Technical Physics, Computer Science and Applied Mathematics}\\
+\emph{Master in Mathematical Methods In Computer Science}
+\end{lyxlist}
+
+\section{Experiences}
+\vspace{-8pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+
+\gray Period    & \textbf{2021 - ongoing}\\
+\gray Employer  & \textbf{CardinalCryptography} \\
+\gray Job Title & \textbf{Blockchain engineer}\\
+\gray Languages & Rust, Python, Circom\\
+\gray Keywords & ZeroKnowledge, Cryptography \\
+\gray           &  {\textit{
+Aleph Zero is a layer 1 privacy-enhancing blockchain that ensures scalability, low transaction fees, instant finality, and optimal security.
+I am part of a multi-disciplinary team, mainly responsible for the team developing Smart Contracts as well as being involved in the privacy layer underlying Liminal - a private DeFi framework of the AlephZero.
+}}\\ \\
+
+\gray Period    & \textbf{2020 - 2021}\\
+\gray Employer  & \textbf{Clash} \\
+\gray Job Title & \textbf{Senior engineer}\\
+\gray Languages & Clojure, ClojureScript, Java, Python, Rust\\
+\gray Keywords & Mobile, AWS, Serverless \\
+\gray           &  {\textit{
+    \href{https://clashapp.co/}{Clash} is a a mobile social-network application for sharing short videos.
+    %% Clash is a mobile social-network application for sharing short videos.
+    Within a team of 3 developers I am responsible for the DevOps tasks, much of the backend and the data analytics, but I do not shy away from working on the client application either.
+    The infrastructure is entirely serverless, with a mixture of scalable ECS tasks exchanging SQS messages and stateless Lambda functions.
+    The API consists of \href{https://eql.readthedocs.io/en/latest/}{EQL} endpoints and communicates with the mobile clients over websocket connections to the AWS API Gateway.
+    Persistance is achieved using MySQL and the hot storage uses Redis.
+    The application code is written in ClojureScript targeting ReactNative, with a few components implemented natively.
+    We use a pipeline composed of CloudFormation templates, Liquibase, Fastlane and CircleCI for automating the deployment.
+    %% My biggest achivement on this project is
+    One of the sub-systems is a recommendation engine \href{https://www.youtube.com/watch?v=RG4g0Wd_elo&t=1s}{that I designed and developed}, powered by Rust and Tensorflow and fed from the data stored in an S3 data-lake.
+}}\\ \\
+
+\gray Period    & \textbf{2017 - 2020}\\
+\gray Employer  & \textbf{district0x} \\
+\gray Job Title & \textbf{Clojure(Script) engineer}\\
+\gray Languages & Clojure, ClojureScript, Solidity\\
+\gray Keywords & Ethereum, IPFS, SmartContracts \\
+\gray           &  {\textit{
+    I helped building a network of decentralized OpenSource markets and communities, powered by Ethereum smart contracts written in Solidity on the backend and a suite of \href{https://github.com/district0x}{ClojureScript libraries} at the frontend.
+    To build each `district' we experiment and try out novel architectures that leverage the decentralized nature of the Ethereum ecosystem.
+}}\\ \\
+
+\gray Period    & \textbf{2017}\\
+\gray Employer  & \textbf{LambdaWerk GmbH} \hfill Berlin, Germany\\
+\gray Job Title & \textbf{Functional Software Engineer}\\
+\gray Languages & Clojure, ClojureScript\\
+\gray           &  {\textit{Lambdawerk is a Berlin startup developing systems for the healthcare providers on the USA market, quering, combining and analyzing information from various data-sources.
+%% our stack comprises entirely of Clojure and ClojureScript.
+The software stack comprises of a MarkLogic NoSQL database for persistance, microservices use RabbitMQ messaging for communication and are exposed to the outside world using REST services.
+Small team and fast paced environment demanded that I have worked on both frontend and backend applications, as well as on the infrastructure and DevOps needs.
+%% I have developed a reagent/re-frame UI for QA, an asynchronous http-gateway to our messaging applications, worked on various parts of a BPMN engine and a microservices application
+%% Our ever-evolving
+}}\\ \\
+
+\gray Period    & \textbf{2016 - 2017}\\
+\gray Employer  & \textbf{Trimble T\&L} \hfill Haasrode Research-Park, Belgium\\
+\gray Job Title & \textbf{Java Developer}\\
+\gray Languages & Java, JavaScript, SQL\\
+\gray           &  {\textit{I work as part of a team developing Java EE applications for transport and logistics.
+Our software collects and analyzes real-time information from on-board devices in trucks, including CAN bus, GPS and manually entered data, for a display in dispatch centers.
+My main involvment inclus the development of features allowing for the display of geo-awareness information on maps and co-development of a new application for shipping of goods.
+I am also responsible for refactoring of our security, authentication and user management from the legacy Spring Security to \href{http://www.keycloak.org/}{Keycloak}.}}\\ \\
+\gray Period    & \textbf{2011 --- 2016}\\
+\gray Employer  & \textbf{Rega Institute for Medical Research} \hfill Leuven, Belgium\\
+\gray Job Title & \textbf{Researcher}\\
+\gray Languages & Java, JavaScript, Clojure, R, Bash, C/C++, CUDA\\
+\gray           &   {\textit {As s research-developer I am responsible for the development of open-source software for scientific analysis and visualisation of the spread of viruses over time and space.
+    My main contributions are the advancements made to the \href{https://github.com/beast-dev/beast-mcmc}{BEAST} and the development of \href{https://github.com/phylogeography/SpreaD3}{SpreaD3} software package.
+    At the core of Spread3 lies a D3 \href{https://github.com/phylogeography/d3-renderer}{visualisation engine}).
+    Driven by the popularity of the software, I started to maintain it's next versions \href{https://github.com/fbielejec/spread}{visualization engine} as an OpenSource side-project.}}\\ \\
+%% \gray Period    & \textbf{2010}\\
+%% \gray Employer  & \textbf{Tele-Atlas} \hfill Lodz, Poland\\
+%% \gray Job Title & \textbf{Data operator}\\
+%% \gray Languages & SQL\\
+%% \gray           & {\textit{Navigation and map data solutions.}} \\ \\
+%% \gray Period    & \textbf{2009}\\
+%% \gray Employer  & \textbf{BRE BANK S.A} \hfill Lodz, Poland\\
+%% \gray Job Title & \textbf{Corporate department trainee}\\
+%% \gray Languages & SAS 4GL\\
+%% \gray           & {\textit{Credit scoring.}} %\\
+\end{tabularx}
+
+\section{Skills}
+%% \vspace{-8pt}
+
+    \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+    \gray Languages & {Rust, Clojure, ClojureScript, Python, Java, JavaScript, R, Solidity}\\
+
+    \gray Libraries / Frameworks & {Rust: OpenCV (bindings), Tensorflow (bindings), polars, rayon, async-std, tokio, rusoto (AWS), serde, ron, tonic (gRPC).
+
+                                    Python: keras, Tensorflow, Pandas, NumPy, pyspark.
+                                    %% Java: Spring Boot, Hibernate, %JPA, GWT, EJB3, JSP %Processing, Spark, Gson,
+
+                                    %% JavaScript: D3.js, React, Redux, ReactNative %Node.js, webpack,
+
+                                    EVM: Solidity, Truffle.
+
+                                    Clojure: Mount, Lacinia, Pedestal, Timbre, flow-storm, spec, hugSQL, transit, match.
+
+                                    ClojureScript: Reagent, re-frame, garden.
+
+                                    Stack: AWS, Serverless, Docker, CircleCI, Travis.
+                                   }\\
+
+ \gray Testing & {Clojure: kaocha, clj-kondo
+
+                  ClojureScript: jest, doo, karma
+ }\\
+
+    \gray Security & {Keycloak}\\
+
+    \gray Databases & {PostgreSQL, FireBase, Redis, Cassandra, ElasticSearch}\\
+
+    \gray Database migration & {Liquibase, Lobos}\\
+
+    \gray Deployment & {Serverless, Docker}\\
+
+    \gray Messaging & {RabbitMQ, SQS, Kafka}\\
+
+    \gray Operating systems & {Debian, Ubuntu, Linux Mint}\\
+
+    \gray Other & {Revision control: git
+
+                   Computer algebra systems: Maxima, Maple
+
+                   Build systems: Maven, Leiningen, webpack, shadow-cljs, clojure-cli
+
+                   Typesetting: $\mathrm{L\!\!^{_{{\scriptstyle A}}}\!\!\!\!\!\;\; T\!_{{\displaystyle E}}\! X}$
+
+                   Dynamic report generation: Sweave, knitr, org-mode
+
+                    %% Presentation: reveal.js, beamer
+
+                   Microcontrollers: avrdude, arduino, TI Launchpad
+                   }
+    \end{tabularx}
+
+\section{Training. Meetups \& Conferences}
+%% \vspace{-8pt}
+
+    \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+
+      \gray Date & \textbf{Ongoing}\\
+      \gray Title  & \textbf{Leuven Functional Programming Meetup} \hfill Leuven, BE\\
+      & \emph{I co-organize a \href{https://www.meetup.com/Leuven-Functional-Programming-Meetup/}{meetup} dedicated to discussing FP concepts and projects in a variety of languages and platforms: Clojure | Scala | Elixir | Elm | ClojureScript | Haskell. }
+      \\
+
+      \gray Date & \textbf{August 2 --- 3 2019}\\
+      \gray Title  & \textbf{Heart Of Clojure} \hfill Leuven, BE\\
+      & \emph{ A laid-back summer Conference for the European Clojure community }
+      \\
+
+             \gray Date & \textbf{June 13 --- 14 2017}\\
+    \gray Title  & \textbf{Marklogic World} \hfill London, UK\\
+           & \emph{Marklogic Enterprise NoSQL database conference.}
+   \\
+
+             \gray Date & \textbf{November 7 --- 11 2016}\\
+    \gray Title  & \textbf{Devoxx} \hfill Antwerp, Belgium\\
+           & \emph{Java Community Conference.}
+   \\
+
+             \gray Date & \textbf{April --- May 2013}\\
+    \gray Title  & \textbf{Specialist Workshop on Parallel Computing} \hfill Leuven, Belgium\\
+           & \emph{Series of workshops and seminars targeting important HPC topics, introduced by experts in the field.}
+   \\
+
+         \gray Date & \textbf{July 9 --- 27 2012}\\
+    \gray Title  & \textbf{Summer Institute in Statistical Genetics} \hfill Seattle, WA, USA\\
+           & \emph{Series of two-and-a-half day workshops designed to introduce statisticians to the statistical challenges posed by modern genetic data.}
+   \\
+
+        \gray Date & \textbf{July 9 --- 25 2012}\\
+    \gray Title  & \textbf{Summer Institute in Statistics and Modelling in Infectious Diseases} \hfill Seattle, WA, USA\\
+           & \emph{Series of two-and-a-half day workshops designed to introduce statisticians and mathematical modelers to the statistical and dynamic problems posed by modern infectious disease data.}
+   \\
+
+       \gray Date & \textbf{November 5 --- 6 2011}\\
+    \gray Title  & \textbf{2 Day CUDA Workshop} \hfill Berlin, Germany\\
+           & \emph{CUDA hands on workshop for developers who want to program and utilize Graphics Processing Units (GPU) using NVIDIA’s CUDA programming language.}
+   \\
+
+       \gray Date & \textbf{July 24 --- August 3 2011}\\
+    \gray Title  & \textbf{Workshop on Computatonal Molecular Evolution} \hfill Woods Hole, MA, USA\\
+           & \emph{Series of lectures, discussions and bioinformatic laboratories.}
+   \\
+
+       \gray Date & \textbf{May 5 --- 8 2011 }\\
+    \gray Title  & \textbf{Processing Digital Environments} \hfill Lugano, Switzerland\\
+           & \emph{Processing workshop about polymorphism and reflection.}
+    \end{tabularx}
+
+%      \section{Teaching experience}
+% \vspace{-8pt}
+%
+%     \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+%
+%              \gray Date & \textbf{November 2013 --- February 2014}\\
+%     \gray Title  & \textbf{Applied Biostatistics} \hfill KU Leuven, Belgium\\
+%            & \emph{Teaching assistant, responsible for preparing and teaching excercise sessions.}
+%    \\
+%              \gray Date & \textbf{November 2013 --- February 2016}\\
+%     \gray Title  & \textbf{Veme Bioinformatics workshop} \hfill Havana, Cuba\\
+%            & \emph{Full-time teacher, responsible for preparing and teaching theory and excercise sessions.}
+%    \\
+%
+%     \end{tabularx}
+
+% \section{Grants \& Research support}
+%  \vspace{-8pt}
+% \begin{lyxlist}{00.00.0000}
+% \item [{\noun{\scriptsize 2015 - 2016}}]
+% \emph{Post-doctoral Mandate, Research Fund KU Leuven}
+% \end{lyxlist}
+
+\section{Some of my publications \& talks}
+%% \vspace{-8pt}
+
+\begin{lyxlist}{00.00.0000}
+
+\item [{\noun{\scriptsize 2021}}] \emph{Making recommendations with Rust and Tensorflow }
+\href{https://www.youtube.com/watch?v=RG4g0Wd_elo&t=1s}{Virtual Lunch \& Learn}
+
+\item [{\noun{\scriptsize 2019}}] \emph{How to constrain your function inputs without the overhead of types? }
+Functional Programming Meetup, Leuven, Belgium
+
+\item [{\noun{\scriptsize 2017}}] \emph{(Quickly) securing your web applications with Keycloak. }
+Clojure Dojo, Berlin, Germany
+
+%% \item [{\noun{\scriptsize 2016}}] \emph{Identifying predictors of time-inhomogeneous viral evolutionary processess}
+%% Bielejec, F., Baele, G., Rodrigo, Allen G., Suchard, M. A., Lemey, P.
+%% Virus Evolution 2016, DOI: 10.1093/molbev/msw082
+
+\item [{\noun{\scriptsize 2016}}] \emph{SpreaD3: interactive visualisation of spatiotemporal history and trait evolutionary processes}
+Bielejec, F., Baele, G., Vrancken, B.,  Suchard, M. A., Rambaut, A., Lemey, P.
+Molecular Biology and Evolution  2016, DOI: 10.1093/molbev/msw082
+
+% \item [{\noun{\scriptsize 2016}}] \emph{The global antigenic diversity of swine influenza A viruses}
+% Lewis, N.S., Russell, C.A., Langat, P., Anderson, T.K. Berger, K., Bielejec, F., et al
+% eLife 2016, DOI:http://dx.doi.org/10.7554/eLife.12217
+
+\item [{\noun{\scriptsize 2016}}] \emph{SpreaD3: User-friendly application to analyze and visualize phylodynamic reconstructions. }
+Alphy 2016, Lille, France
+
+%% \item [{\noun{\scriptsize 2016}}] \emph{Bayesian codon substitution modeling to identify sources of pathogen evolutionary rate variation}
+%% Baele, G., Suchard, M. A., Bielejec, F., Lemey, P.
+%% Microbial Genomics 2016, DOI: 10.1099/mgen.0.000057
+
+% \item [{\noun{\scriptsize 2015}}] \emph{Host ecology determines the dispersal patterns of a plant virus}
+% Trovão, N. S., Baele, G., Vrancken, B., Bielejec, F., Suchard, M. A., Fargette, D., Lemey, P.
+% Virus Evol 2015, 1(1) DOI: 10.1093/ve/vev016
+
+\item [{\noun{\scriptsize 2014}}] Poster: \emph{$\pi$BUSS: a parallel BEAST/BEAGLE utility for sequence simulation under complex evolutionary scenarios}
+Mathematical and Computational Evolutionary Biology, Hameau de l'Etoile, France.
+
+%% \item [{\noun{\scriptsize 2014}}] \emph{Inferring Heterogeneous Evolutionary Processes Through Time: from sequence substitution to phylogeography}
+%% Bielejec, F., Lemey, P., Baele, G., Rambaut, A., Suchard, M.A.
+%% Systematic Biology 2014, 63(4), 493-504
+
+\item [{\noun{\scriptsize 2013}}] \emph{$\pi$BUSS: a parallel BEAST/BEAGLE utility for sequence simulation under complex evolutionary scenarios}
+Bielejec, F., Lemey, P., Carvalho, L.M., Baele, G., Rambaut, A., Suchard, M.A.
+BMC Bioinformatics 2014, 15:133
+
+\item [{\noun{\scriptsize 2013}}] \emph{Inferring large-scale heterogeneous evolutionary processes through time}
+Mathematical and Computational Evolutionary Biology, Hameau de l'Etoile, France.
+
+%% \item [{\noun{\scriptsize 2013}}] \emph{Presenting SPREAD: Spatial Phylogenetic Reconstruction of Evolutionary Dynamics}
+%% Bioinformatics Group Meeting (BIG), Leuven, Belgium.
+
+%% \item [{\noun{\scriptsize 2012}}] \emph{Unifying viral genetics and human transportation data to predict the global transmission dynamics of human influenza H3N2}
+%% Lemey, P., Rambaut, A., Bedford, T., Faria, N.R., Bielejec, F., Baele, G., Russell, C.A., Smith, D.J., Pybus, O.G., Brockmann, D., Suchard, M. A.
+%% PLoS pathogens 10(2), e1003932
+
+\item [{\noun{\scriptsize 2012}}] \emph{Massive parallelization of likelihood computations through graphics processing units.}
+Genome Bioinformatics Meeting, Leuven, Belgium.
+
+% \item [{\noun{\scriptsize 2012}}] \emph{A counting renaissance: Combining stochastic mapping and empirical Bayes to quickly detect amino acid sites under positive selection.}
+% Lemey, P., Bielejec, F., Suchard, M. A., Minin, V., Kosakovsky Pond, S.L.
+% Bioinformatics 28(24), 3248-56
+
+%% \item [{\noun{\scriptsize 2011}}] \emph{Spatial phylogenetic reconstruction of evolutionary dynamics.}
+%% ERC Working Group Meeting, Edinburgh, Scotland.
+
+%% \item [{\noun{\scriptsize 2011}}] \emph{SPREAD: Spatial phylogenetic reconstruction of evolutionary dynamics.}
+%% Bielejec, F., Rambaut, A., Suchard, M. A., Lemey, P.
+%% Bioinformatics 27(20), 2910-2912.
+
+\end{lyxlist}
+
+%~ \section{Languages}
+%~ \vspace{-8pt}
+%~
+%~ \begin{lyxlist}{MMMMM}
+%~ \item [{~}] {Polish (native), English (fluent), German(intermediate), Dutch (beginner)}
+%~ \end{lyxlist}
+%~
+%~ \section{Interests}
+%~ \vspace{-8pt}
+%~
+%~ \begin{lyxlist}{MMMMM}
+%~ \item [{~}] {Statistics, data analysis, programming and algorithms}
+%~ \end{lyxlist}
+
+
+ %\section{References}
+ % \vspace{-8pt}
+
+% \begin{lyxlist}{00.00.0000}
+% \item [{\noun{\scriptsize Professor Philippe Lemey}}]  \emph{philippe.lemey@gmail.com }
+%
+% \item [{\noun{\scriptsize Professor Marc Suchard}}]  \emph{msuchard@ucla.edu }
+%
+% \item [{\noun{\scriptsize Professor Anne-Mieke Vandamme}}] \emph{annemie.vandamme@kuleuven.be }
+%\end{lyxlist}
+
+
+\section{Social}
+  %% \vspace{-8pt}
+
+ \begin{lyxlist}{00.00.0000}
+
+ \item [{\noun{\scriptsize Blog}}] \emph{ \url{https://www.blog.nodrama.io/} }
+
+ \item [{\noun{\scriptsize Github}}] \emph{ \url{http://github.com/fbielejec} }
+
+ \item [{\noun{\scriptsize StackOverflow}}] \emph{ \url{http://stackoverflow.com/users/813216/fbielejec }}
+
+\end{lyxlist}
+
+\end{center}
+
+\end{document}
