@@ -2,7 +2,7 @@
 
 % === PACKAGES
 \usepackage{soul}
-\usepackage{scrpage2}
+\usepackage{scrlayer-scrpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage{ltablex}
@@ -106,84 +106,76 @@ Department of Technical Physics, Computer Science and Applied Mathematics}\\
 \section{Experiences}
 \vspace{-8pt}
 
-\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\begin{tabularx}{1.0\linewidth}{>{\raggedleft\scshape}p{2cm}X}
 
-\gray Period    & \textbf{2021 - ongoing}\\
-\gray Employer  & \textbf{CardinalCryptography} \\
-\gray Job Title & \textbf{Blockchain engineer}\\
-\gray Languages & Rust, Python, Circom\\
-\gray Keywords & ZeroKnowledge, Cryptography \\
+\gray Period    & \textbf{2021 - ongoing} \\
+\gray Company  & \textbf{CardinalCryptography} \\
+\gray Title & \textbf{Blockchain engineer} \\
+\gray Languages & Rust, Python, Circom \\
+\gray Keywords & ZeroKnowledge, SNARKs, Halo2 \\
 \gray           &  {\textit{
-Aleph Zero is a layer 1 privacy-enhancing blockchain that ensures scalability, low transaction fees, instant finality, and optimal security.
-I am part of a multi-disciplinary team, mainly responsible for the team developing Smart Contracts as well as being involved in the privacy layer underlying Liminal - a private DeFi framework of the AlephZero.
-}}\\ \\
+Aleph Zero is a layer 1 privacy-enhancing blockchain that ensures scalability, low transaction fees, instant finality,
+and optimal security.
+In a part of multi-disciplinary team I was involved in the development of \href{https://mo.st/}{Most} bridge, \href{https://alephzero.org/the-button}{TheButton} smart-contract game.
+Most importantly I was responsible for the development of the halo2 circuits underlying \href{https://docs.alephzero.org/aleph-zero/protocol-details/shielder}{Shielder}.
+Shielder is a privacy-focused smart contract on Aleph Zero that uses zk-SNARKs to enable private transactions and interactions with DeFi by obscuring the link between user actions (deposits and withdrawals), making it impossible for the third-party observers to trace or associate these activities with specific users.
+}} \\
 
-\gray Period    & \textbf{2020 - 2021}\\
-\gray Employer  & \textbf{Clash} \\
-\gray Job Title & \textbf{Senior engineer}\\
-\gray Languages & Clojure, ClojureScript, Java, Python, Rust\\
+\gray Period & \textbf{2020 - 2021} \\
+\gray Company & \textbf{Clash} \\
+\gray Title & \textbf{Cofounder \& Senior engineer} \\
+\gray Languages & Clojure, ClojureScript, Java, Python, Rust \\
 \gray Keywords & Mobile, AWS, Serverless \\
 \gray           &  {\textit{
-    \href{https://clashapp.co/}{Clash} is a a mobile social-network application for sharing short videos.
+    \href{https://clashapp.co/}{Clash} is a mobile social-network application for sharing short videos.
+     Within a team of 3 developers I was responsible for the analytics, design and development of an S3 data lake and an ingestion pipeline as well as a \href{https://www.youtube.com/watch?v=RG4g0Wd_elo&t=1s}{recommendations model}, powered by Rust, Spark and Tensorflow.
     %% Clash is a mobile social-network application for sharing short videos.
-    Within a team of 3 developers I am responsible for the DevOps tasks, much of the backend and the data analytics, but I do not shy away from working on the client application either.
-    The infrastructure is entirely serverless, with a mixture of scalable ECS tasks exchanging SQS messages and stateless Lambda functions.
-    The API consists of \href{https://eql.readthedocs.io/en/latest/}{EQL} endpoints and communicates with the mobile clients over websocket connections to the AWS API Gateway.
-    Persistance is achieved using MySQL and the hot storage uses Redis.
-    The application code is written in ClojureScript targeting ReactNative, with a few components implemented natively.
-    We use a pipeline composed of CloudFormation templates, Liquibase, Fastlane and CircleCI for automating the deployment.
-    %% My biggest achivement on this project is
-    One of the sub-systems is a recommendation engine \href{https://www.youtube.com/watch?v=RG4g0Wd_elo&t=1s}{that I designed and developed}, powered by Rust and Tensorflow and fed from the data stored in an S3 data-lake.
-}}\\ \\
+    %% Within a team of 3 developers I was responsible for the DevOps tasks, much of the backend and the data analytics, but I do not shy away from working on the client application either.
+    %% The infrastructure is entirely serverless, with a mixture of scalable ECS tasks exchanging SQS messages and stateless Lambda functions.
+    %% The API consists of \href{https://eql.readthedocs.io/en/latest/}{EQL} endpoints and communicates with the mobile clients over websocket connections to the AWS API Gateway.
+    %% Persistance is achieved using MySQL and the hot storage uses Redis.
+    %% The application code is written in ClojureScript targeting ReactNative, with a few components implemented natively.
+    %% We use a pipeline composed of CloudFormation templates, Liquibase, Fastlane and CircleCI for automating the deployment.
+    %% One of the sub-systems is
+}} \\
 
-\gray Period    & \textbf{2017 - 2020}\\
-\gray Employer  & \textbf{district0x} \\
-\gray Job Title & \textbf{Clojure(Script) engineer}\\
-\gray Languages & Clojure, ClojureScript, Solidity\\
+\gray Period    & \textbf{2017 - 2020} \\
+\gray Company  & \textbf{district0x} \\
+\gray Title & \textbf{Clojure(Script) engineer} \\
+\gray Languages & Clojure, ClojureScript, Solidity \\
 \gray Keywords & Ethereum, IPFS, SmartContracts \\
 \gray           &  {\textit{
     I helped building a network of decentralized OpenSource markets and communities, powered by Ethereum smart contracts written in Solidity on the backend and a suite of \href{https://github.com/district0x}{ClojureScript libraries} at the frontend.
-    To build each `district' we experiment and try out novel architectures that leverage the decentralized nature of the Ethereum ecosystem.
-}}\\ \\
+    To build each `district' we experimented and tred out novel architectures that leveraged the decentralized nature of the Ethereum ecosystem.
+}} \\
 
-\gray Period    & \textbf{2017}\\
-\gray Employer  & \textbf{LambdaWerk GmbH} \hfill Berlin, Germany\\
-\gray Job Title & \textbf{Functional Software Engineer}\\
-\gray Languages & Clojure, ClojureScript\\
+\gray Period    & \textbf{2017} \\
+\gray Company  & \textbf{LambdaWerk GmbH} \hfill Berlin, Germany \\
+\gray Title & \textbf{Functional Software Engineer} \\
+\gray Languages & Clojure, ClojureScript \\
 \gray           &  {\textit{Lambdawerk is a Berlin startup developing systems for the healthcare providers on the USA market, quering, combining and analyzing information from various data-sources.
 %% our stack comprises entirely of Clojure and ClojureScript.
 The software stack comprises of a MarkLogic NoSQL database for persistance, microservices use RabbitMQ messaging for communication and are exposed to the outside world using REST services.
 Small team and fast paced environment demanded that I have worked on both frontend and backend applications, as well as on the infrastructure and DevOps needs.
-%% I have developed a reagent/re-frame UI for QA, an asynchronous http-gateway to our messaging applications, worked on various parts of a BPMN engine and a microservices application
-%% Our ever-evolving
-}}\\ \\
+}} \\
 
-\gray Period    & \textbf{2016 - 2017}\\
-\gray Employer  & \textbf{Trimble T\&L} \hfill Haasrode Research-Park, Belgium\\
-\gray Job Title & \textbf{Java Developer}\\
-\gray Languages & Java, JavaScript, SQL\\
-\gray           &  {\textit{I work as part of a team developing Java EE applications for transport and logistics.
-Our software collects and analyzes real-time information from on-board devices in trucks, including CAN bus, GPS and manually entered data, for a display in dispatch centers.
-My main involvment inclus the development of features allowing for the display of geo-awareness information on maps and co-development of a new application for shipping of goods.
-I am also responsible for refactoring of our security, authentication and user management from the legacy Spring Security to \href{http://www.keycloak.org/}{Keycloak}.}}\\ \\
-\gray Period    & \textbf{2011 --- 2016}\\
-\gray Employer  & \textbf{Rega Institute for Medical Research} \hfill Leuven, Belgium\\
-\gray Job Title & \textbf{Researcher}\\
-\gray Languages & Java, JavaScript, Clojure, R, Bash, C/C++, CUDA\\
-\gray           &   {\textit {As s research-developer I am responsible for the development of open-source software for scientific analysis and visualisation of the spread of viruses over time and space.
-    My main contributions are the advancements made to the \href{https://github.com/beast-dev/beast-mcmc}{BEAST} and the development of \href{https://github.com/phylogeography/SpreaD3}{SpreaD3} software package.
-    At the core of Spread3 lies a D3 \href{https://github.com/phylogeography/d3-renderer}{visualisation engine}).
-    Driven by the popularity of the software, I started to maintain it's next versions \href{https://github.com/fbielejec/spread}{visualization engine} as an OpenSource side-project.}}\\ \\
-%% \gray Period    & \textbf{2010}\\
-%% \gray Employer  & \textbf{Tele-Atlas} \hfill Lodz, Poland\\
-%% \gray Job Title & \textbf{Data operator}\\
-%% \gray Languages & SQL\\
-%% \gray           & {\textit{Navigation and map data solutions.}} \\ \\
-%% \gray Period    & \textbf{2009}\\
-%% \gray Employer  & \textbf{BRE BANK S.A} \hfill Lodz, Poland\\
-%% \gray Job Title & \textbf{Corporate department trainee}\\
-%% \gray Languages & SAS 4GL\\
-%% \gray           & {\textit{Credit scoring.}} %\\
+\gray Period    & \textbf{2016 - 2017} \\
+\gray Company  & \textbf{Trimble T\&L} \hfill Haasrode Research-Park, Belgium \\
+\gray Title & \textbf{Java Developer} \\
+\gray Languages & Java, JavaScript, SQL \\
+\gray           &  {\textit{I worked as part of a team developing applications for transport and logistics.
+Our software collects and analyzes real-time information from on-board devices in trucks, including CAN bus, GPS and manually entered data, for a rela-time display in the dispatch centers.
+My main involvment was the development of features allowing for the display of geo-awareness information on maps,
+%% and co-development of a new application for the shipping of goods.
+I was also responsible for migrating the security, authentication and user management from the legacy system to one utilizing \href{http://www.keycloak.org/}{Keycloak}.}} \\
+
+\gray Period    & \textbf{2011 - 2016} \\
+\gray Company  & \textbf{Rega Institute for Medical Research} \hfill Leuven, Belgium \\
+\gray Job Title & \textbf{Researcher} \\
+\gray Languages & Java, JavaScript, Clojure, R, Bash, C/C++, CUDA \\
+\gray           &   {\textit {As s research-developer I was responsible for the development of open-source software for scientific analysis and visualisation of the spread of viruses over time and space.
+    My main contributions are the advancements made to the high-performance parallel computations library \href{https://github.com/beagle-dev/beagle-lib}{Beagle}, development of novel models in \href{https://github.com/beast-dev/beast-mcmc}{BEAST}, and the development of \href{https://github.com/phylogeography/SpreaD3}{SpreaD3} software package.
+    Driven by it's popularity, I still maintain \href{https://github.com/phylogeography/spread}{Spread} as an OpenSource project.}}
 \end{tabularx}
 
 \section{Skills}
@@ -199,13 +191,13 @@ I am also responsible for refactoring of our security, authentication and user m
 
                                     %% JavaScript: D3.js, React, Redux, ReactNative %Node.js, webpack,
 
-                                    EVM: Solidity, Truffle.
+                                    EVM: Solidity, Foundry.
 
                                     Clojure: Mount, Lacinia, Pedestal, Timbre, flow-storm, spec, hugSQL, transit, match.
 
                                     ClojureScript: Reagent, re-frame, garden.
 
-                                    Stack: AWS, Serverless, Docker, CircleCI, Travis.
+                                    Stack: AWS, Serverless, Docker, CircleCI, GithubActions.
                                    }\\
 
  \gray Testing & {Clojure: kaocha, clj-kondo
@@ -246,7 +238,12 @@ I am also responsible for refactoring of our security, authentication and user m
 
     \begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
 
-      \gray Date & \textbf{Ongoing}\\
+      \gray Date & \textbf{2022 - 2024}\\
+      \gray Title  & \textbf{Polkadot Blockchain Academy} \hfill San Francisco, HongKong, Singapur \\
+      & \emph{I was the \href{https://polkadot.com/blockchain-academy}{PBA} instructor for the Smart Contracts Module. My lectures and laboratories were focused on the exploits, MEV and other security considerations. For the final exercise students were tasked with findind and exploiting a vulnerability in a live smart contract. }
+      \\
+      
+      \gray Date & \textbf{2017 - 2022}\\
       \gray Title  & \textbf{Leuven Functional Programming Meetup} \hfill Leuven, BE\\
       & \emph{I co-organize a \href{https://www.meetup.com/Leuven-Functional-Programming-Meetup/}{meetup} dedicated to discussing FP concepts and projects in a variety of languages and platforms: Clojure | Scala | Elixir | Elm | ClojureScript | Haskell. }
       \\
@@ -324,6 +321,10 @@ I am also responsible for refactoring of our security, authentication and user m
 
 \begin{lyxlist}{00.00.0000}
 
+\item [{\noun{\scriptsize 2022}}] \emph{SPREAD 4: online visualisation of pathogen phylogeographic reconstructions}
+K.D. Nahata, F. Bielejec, J. Monetta, S. Dellicour, A., Rambaut, M.A., Suchard, P. Lemey,
+Virus evolution 8 (2), veac088
+  
 \item [{\noun{\scriptsize 2021}}] \emph{Making recommendations with Rust and Tensorflow }
 \href{https://www.youtube.com/watch?v=RG4g0Wd_elo&t=1s}{Virtual Lunch \& Learn}
 
